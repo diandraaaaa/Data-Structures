@@ -1,0 +1,25 @@
+function multiply(matix)
+//pre: m1, m2 matrici
+// post: result matrice
+ int resultRows = _nrLines;
+ int resultCols = other._nrCols;
+ Matrix result(resultRows, resultCols); 
+
+if not m1.nrLini= m2.nrCols
+	throw exception
+end if
+
+for(int i=0; i<resultRows, i+1)
+	for(int i=0; i<resultRows, i+1)
+		   TElem value = 0;
+ 		for (int k = 0; k < _nrCols; k++) 
+                	TElem value1 = element(i, k);
+                	TElem value2 = element(k, j);
+                	value = value + (value1 * value2);
+         
+		end for
+           	 result.modify(i, j, value);
+
+   end for 
+end for
+    return result;
