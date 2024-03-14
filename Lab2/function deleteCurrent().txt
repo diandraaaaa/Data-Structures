@@ -1,0 +1,32 @@
+function deleteCurrent() 
+    // Check if the iterator is valid
+    IF (not valid()) THEN: 
+        throw exception();
+    END IF
+    
+
+    // Get pointers to the previous and next nodes
+    prev_node = current->prev
+    next_node = current->next
+
+    // Update the previous node's "next" pointer to skip the current node
+    IF (prev_node IS NOT null) THEN:
+        prev_node->next = next_node
+    ELSE 
+        // If the current node is the head of the list, update the head pointer
+        bag.head = next_node
+    END IF
+
+
+    // Update the next node's "prev" pointer to skip the current node
+    IF (next_node IS NOT null) THEN:
+        next_node->prev = prev_node
+    ELSE 
+        // If the current node is the tail of the list, update the tail pointer
+        bag.tail = prev_node
+    END IF    
+
+    // Delete the current node and update the iterator to point to the next node
+    delete current
+    current = next_node
+   
