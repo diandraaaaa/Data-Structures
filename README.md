@@ -1,7 +1,7 @@
 # Data Structures and Containers Exploration
 
 **Introduction:**
-This README summarizes my exploration of data structures using C++ and understanding how different containers interact with various data structures.
+This Repository summarizes my exploration of data structures using C++ and understanding how different containers interact with various data structures.
 
 **Overview:**
 During this exploration, I studied fundamental data structures such as arrays, linked lists, stacks, queues, trees, and graphs. Each assignment focused on understanding a specific data structure and its implementation in C++, along with exploring the appropriate container choices for efficient implementation.
